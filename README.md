@@ -10,6 +10,9 @@ The project consists of three main files:
 
 In order to make all work, you have to train *N* models *independently* by executing *train_single_model.py*. Inside the code, you can specify the dataset and the scene you want to train the models with (be sure to download the datasets and check their paths). 
 Then you can simply execute:
+
     main.py --config configs/nerf/lego.py --ckpts *path_to_model_1*, *path_to_model_2*
+
 if you want to also compress the models during training (Conjoint Pruning of the Ensemble, CPE), you can execute:
+
     main.py --config configs/nerf/lego.py --ckpts *path_to_model_1*, *path_to_model_2* --renerf
